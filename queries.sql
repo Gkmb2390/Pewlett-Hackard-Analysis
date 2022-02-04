@@ -98,3 +98,52 @@ GROUP BY de.dept_no
 order BY de.dept_no;
 
 SELECT * FROM current_emp
+
+SELECT * FROM salaries;
+
+SELECT * FROM salaries
+ORDER BY to_date DESC;
+
+-- MORE THAN 1 JOIN with Filters
+SELECT e.emp_no, e.first_name, e.last_name, e.gender, s.salary, de.to_date
+INTO emp_info
+FROM employees as e
+INNER Join salaries as s
+ON (e.emp_no = s.emp_no)
+INNER JOIN dept_emp as de
+ON (e.emp_no = de.emp_no)
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+	AND (e.hire_date BETWEEN '1985-01-01' AND '1988-12-31')
+	AND (de.to_date = '9999-01-01');
+	
+	
+	
+--  List of manager per dept
+SELECT dm.dept_no, dm.emp_no,dm.from_date,dm.to_date,
+	d.dept_name,
+	ce.first_name, ce.last_name
+INTO manager_info
+FROM managers as dm
+	INNER JOIN departments as d
+	ON (dm.dept_no = d.dept_no)
+	INNER JOIN current_emp as ce
+	ON (dm.emp_no = ce.emp_no);
+	
+	
+	
+SELECT ce.first_name, ce.emp_no, ce.last_name, d.dept_name
+ -- dept_info
+FROM current_emp as ce
+INNER JOIN dept_emp as de
+ON (ce.emp_no = de.emp_no)
+INNER JOIN departments as d
+ON (de.dept_no = d.dept_no);
+
+
+Select e.emp_no, e.first_name, e.last_name, de.dept_no, d.dept_name
+FROM employees as e
+INNER JOIN dept_emp as de
+ON (e.emp_no = de.emp_no)
+Inner JOIN departments as d
+ON (de.dept_no = d.dept_no)
+
