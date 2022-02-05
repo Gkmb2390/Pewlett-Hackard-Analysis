@@ -6,21 +6,26 @@
 # Findings from Researching the 'Silver Tsunami'
 
     1. Pewlett Hackard is facing a very serious retirement issue within the company.  Roughly 1/4 of the company has reached a point where they are eligible for retirement.  In the images below pulled from the employees table and retiring titles table, we can easily calculate the number of retirement age individuals within the company.  
-    
-[IMAGE OF EMPLOYEES COUNT]
-[IMAGE OF RETIRING TITLES SUM]
+
+## Employee Table Count of Employees    
+[IMAGE OF EMPLOYEES COUNT] https://github.com/Gkmb2390/Pewlett-Hackard-Analysis/blob/main/Employees%20count%20file.png
+## Retiring Titles Table Sum
+[IMAGE OF RETIRING TITLES SUM] https://github.com/Gkmb2390/Pewlett-Hackard-Analysis/blob/main/retiring%20titles%20sum.png
 
     2. Given the information we gathered in the retiring titles table shown below.   We can see that a large majority of retirement age employees also hold a "Senior" titled position.  Meaning that not only will Pewlett Hackard be facing a shortage of workers - but also they will be losing many of the most experinced individuals within the company.  
 
-[IMAGE OF RETIRING TITLES]
+## Retiring Titles Grouped by Title
+[IMAGE OF RETIRING TITLES] https://github.com/Gkmb2390/Pewlett-Hackard-Analysis/blob/main/retiring%20titles%20senior%20image.png
 
     3.  Another issue that Pewlett Hackard, should very seriously consider tackling is the cleanliness of their data.  Portions of the excercise necessitated that we clean the databases that Pewlett Hackard had provided us. However since the data was not being regularly cleaned or upkept we were required to take additional steps to ensure that we weren't providing redudant data.  
 
-[Image of Duplicate employee files] 
+## Duplicate Employee Files from Retiring Titles Table
+[Image of Duplicate employee files] https://github.com/Gkmb2390/Pewlett-Hackard-Analysis/blob/main/duplicate%20entries.png
 
     4.  Pewlett Hackard needs to very seriously consider either widening their criteria for the Mentorship program or to increase the number of mentees per mentor. Assuming the mentorship program is designed to assist in increasing knowledge of those employees whom have not yet reached retirement age.  Considering there are only 1549 mentors found in the mentorship_eleigibity table, as shown below.  When you consider the number of employees who will be retiring it creates a drastic difference in experiential being allowed to leave without being passed on.
 
-[IMAGE Of mentorship eligibility count]
+## Mentorship Eligibility Table Count
+[IMAGE Of mentorship eligibility count] https://github.com/Gkmb2390/Pewlett-Hackard-Analysis/blob/main/count%20of%20mentorship%20eligibilty.png
 
 #   Summary
 
